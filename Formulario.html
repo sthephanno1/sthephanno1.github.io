@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/correo.png">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Parque Nacional del Manu | Contacto</title>
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="FA-6.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="form-content">
+        <h3><a href="#" onclick="goBack()"><i class="fa-solid fa-chevron-left"></i> Atrás</a></h3><br>
+        <h2>Formulario de Contacto</h2>
+        <form onsubmit="handleSubmit(event)" name="formulario" autocomplete="off"
+            action="https://formsubmit.co/sthephanno1@hotmail.com" method="POST">
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject" id="subject">
+
+            <label for="coments">Comentarios</label>
+            <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+
+            <input class="btn" id="BotonVentana" type="submit" value="Enviar">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#BotonVentana').click(function () {
+                Swal.fire({
+                    title: '<h1>Formulario enviado</h1>',
+                    icon: 'success',
+                    text: 'Sus datos están siendo procesados, espere a que uno de nuestros trabajadores se contacte con usted',
+                    showCloseButton: true,
+                    confirmButtonText: 'Entiendo',
+                    allowOutsideClick: false,
+                    focusConfirm: false,
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            location.reload()
+                        )
+                    }
+                })
+            });
+        });
+        function handleSubmit(event) {
+            event.preventDefault();
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

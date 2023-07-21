@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Icono.png" />
+    <link rel="stylesheet" href="css/acerca.css">
+    <link rel="stylesheet" href="FA-6.4/css/all.min.css">
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery.bxslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <title>Parque Nacional del Manu | Sobre el Parque</title>
+</head>
+
+<body>
+    <header>
+        <div id="hd-img">
+            <a href="Index.html"><img src="img/PromPeruLogo.svg" alt="LOGO DE PROM PERU"></a>
+        </div>
+        <div id="hd-contact">
+            <a href="https://api.whatsapp.com/send/?phone=51944492314" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>+51&nbsp;944&nbsp;492&nbsp;314
+            </a>
+            <a href="mailto:perudirect@promperu.gob.pe">
+                <i class="fa-regular fa-envelope"></i>perudirect@promperu.gob.pe
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a class="active" href="Acerca.html">Acerca de</a></li>
+            <li><a href="Formulario.html">Contáctenos</a></li>
+            <li><a href="Tabla.html">Parques</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobre-el-parque">
+            <h2>Sobre el Parque Nacional del Manu</h2>
+            <p>
+                El Parque Nacional del Manu es una reserva natural excepcional situada en la selva amazónica del sur de
+                Perú. Fue declarado Patrimonio de la Humanidad por la <abbr
+                    title="United Nations Educational, Scientific and Cultural Organization">UNESCO</abbr> en 1987
+                debido a su gran diversidad
+                biológica y
+                cultural.
+                Este parque alberga una increíble variedad de especies de flora y fauna, muchas de las cuales son
+                endémicas
+                y están en peligro de extinción. Además, es hogar de comunidades indígenas que han habitado estas
+                tierras
+                durante siglos, manteniendo sus tradiciones y conocimientos ancestrales.
+                Si deseas experimentar la magia de la selva amazónica y conectarte con la naturaleza en su estado más
+                puro,
+                el Parque Nacional del Manu es el destino perfecto para ti.
+            </p><br>
+            <div class="slider">
+                <img src="img/Fondo.png" alt="Collpa de Guacamayos">
+                <img src="img/Fondo-2.jpg" alt="Posada Amazonas a las afueras del Parque">
+                <iframe id="player" src="https://www.youtube.com/embed/FeqDkYzei-8?controls=0&amp;start=50"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoPlay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="stky-ftmenu">
+            <div id="ft-menu">
+                <ul>
+                    <li><a href="Index.html"><i class="fa-solid fa-house"></i>
+                            <p>Inicio</p>
+                        </a></li>
+                    <li><a class="active" href="Acerca.html"><i class="fa-solid fa-address-card"></i>
+                            <p>Acerca&nbsp;De</p>
+                        </a></li>
+                    <li><a href="Tabla.html"><i class="fa-solid fa-tree"></i>
+                            <p>Parques</p>
+                        </a></li>
+                    <li><a href="Formulario.html"><i class="fa-regular fa-comments"></i>
+                            <p>Contacto</p>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <p>&copy; 2023 Parque Nacional del Manu. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                adaptiveHeight: true,
+                mode: 'fade',
+                auto: true,
+                pause: 3000,
+                controls: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                pager: true,
+            });
+        }); 
+    </script>
+</body>
+
+</html>
