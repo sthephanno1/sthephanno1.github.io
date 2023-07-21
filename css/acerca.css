@@ -218,7 +218,6 @@ section {
 
 /**Footer------------------------------------------------------*/
 footer {
-    user-select: none;
     background-color: rgb(59, 58, 52);
     box-shadow: 0px -20px 10px 0px rgba(0, 0, 0, 0.35);
     width: 100%;
@@ -229,6 +228,7 @@ footer {
 }
 
 footer section>* {
+    user-select: none;
     flex: 200px;
     margin: 10px;
 }
