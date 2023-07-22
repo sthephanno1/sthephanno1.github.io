@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="FA-6.4\svgs\solid\signs-post.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Parque Nacional del Manu | Home</title>
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery.bxslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="FA-6.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="hd-img">
+            <a href="index.html"><img src="img/PromPeruLogo.svg" alt="LOGO DE PROM PERU"></a>
+        </div>
+        <div id="hd-contact">
+            <a href="https://api.whatsapp.com/send/?phone=51944492314" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>+51&nbsp;944&nbsp;492&nbsp;314
+            </a>
+            <a href="mailto:perudirect@promperu.gob.pe">
+                <i class="fa-regular fa-envelope"></i>perudirect@promperu.gob.pe
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="Acerca.html">Acerca de</a></li>
+            <li><a href="Formulario.html">Contáctenos</a></li>
+            <li><a href="Tabla.html">Parques</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido al Parque Nacional del Manu</h2>
+            <div class="slider">
+                <img src="img/Paisaje-1.jpg" alt="Paisaje dentro del Parque Nacional del Manu" />
+                <img src="img/Paisaje-2.jpg" alt="Paisaje dentro del Parque Nacional del Manu" />
+                <img src="img/Paisaje-3.jpg" alt="Paisaje dentro del Parque Nacional del Manu" />
+                <img src="img/Paisaje-4.jpg" alt="Paisaje dentro del Parque Nacional del Manu" />
+                <img src="img/Paisaje-5.jpg" alt="Paisaje dentro del Parque Nacional del Manu" />
+                <iframe src="https://www.youtube.com/embed/mwFesIvZ5Zc?controls=0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <hr><br><br>
+        <section id="como-llegar">
+            <h2>Cómo llegar al Parque Nacional del Manu</h2>
+            <p>
+                Se ubica en la cuenca del río Manu, regiones de Cusco y Madre de Dios. Es un área natural protegida que
+                alberga una exquisita biodiversidad reconocida a nivel mundial y resguardada del impacto humano. El
+                parque
+                no sólo protege una amplia diversidad de flora conformada por 2,000 a 5,000 especies; y fauna
+                constituida
+                por más de 2000 especies, incluidas especies amenazadas como el gato montés andino; sino también
+                salvaguarda
+                valores culturales expresados en las formas de ocupación humana adaptada al medio ambiente en esta parte
+                de
+                la Amazonía desarrollada por pueblos originarios durante siglos. Incluso, muchas de estas comunidades no
+                han
+                tenido contacto con el mundo.
+                Año de inscripción en la Lista de Patrimonio Mundial: 1987.
+            </p><br>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1609535.732958811!2d-72.02421873193789!3d
+                -11.909638705041424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916e698b3f0e0c1b%3A0xd0e6cb2cf366b9c7!2sParque%20Nacional%20del%20
+                Manu!5e0!3m2!1sen!2spe!4v1689820180169!5m2!1sen!2spe" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+        </section>
+    </main>
+
+    <footer>
+        <section id="stky-ftmenu">
+            <div id="ft-menu">
+                <ul>
+                    <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>
+                            <p>Inicio</p>
+                        </a></li>
+                    <li><a href="Acerca.html"><i class="fa-solid fa-address-card"></i>
+                            <p>Acerca&nbsp;De</p>
+                        </a></li>
+                    <li><a href="Tabla.html"><i class="fa-solid fa-tree"></i>
+                            <p>Parques</p>
+                        </a></li>
+                    <li><a href="Formulario.html"><i class="fa-regular fa-comments"></i>
+                            <p>Contacto</p>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+        <p>&copy; 2023 Parque Nacional del Manu. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                adaptiveHeight: true,
+                mode: 'fade',
+                auto: true,
+                pause: 3000,
+                controls: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                infiniteLoop: false,
+                hideControlOnEnd: true,
+                pager: true,
+            });
+        });       
+    </script>
+</body>
+
+</html>
